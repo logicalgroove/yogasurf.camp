@@ -1,0 +1,375 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600&subset=cyrillic,cyrillic-ext,latin);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300italic);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 300 !important;
+  color: #4A4A4A;
+}
+
+hr {
+  border-width: 2px 0 0;
+}
+
+b {
+  font-weight: 500;
+}
+
+[class*="fui-"] img  {
+  width: 100%;
+  display: block;
+}
+
+[class*="fui-"] img:hover {
+  opacity: 0.8;
+}
+
+/*------- Header --------*/
+
+.header-10 {
+  position: fixed;
+}
+
+.header-10 .navbar .nav > li {
+  margin-left: 38px;
+}
+
+.header-10 .navbar .nav > li a, .navbar .navbar-form .btn.btn-success {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.header-10 .navbar .nav > li a:hover {
+  color: #000;
+}
+
+@media all and (max-width: 1200px) {
+  .header-10 .navbar .nav > li {
+    margin-left: 20px;
+  }
+  .header-10 .navbar .nav > li a, .navbar .navbar-form .btn.btn-success {
+    font-size: 15px;
+  }
+}
+
+.header-10 .navbar .navbar-form {
+  padding-left: 26px;
+  font-weight: 600;
+}
+
+.navbar .navbar-form .btn {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-10 .header-background {
+  opacity: 0;
+}
+
+.header-9-sub {
+  padding-bottom: 209px;
+}
+
+.header-9-sub .background {
+  background-image: url('../images/bg.jpg');
+  background-attachment: fixed;
+}
+.header-9-sub .hero-unit.bordered {
+  border-width: 3px;
+  padding: 26px 65px 18px;
+}
+
+.header-9-sub p {
+  font-size: 2vw;
+}
+.header-9-sub p img {
+  width: 1.8vw;
+  margin-top: -5px;
+}
+.header-9-sub .hero-unit.bordered p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+@media all and (max-width: 1200px) {
+  .header-9-sub .hero-unit.bordered p {
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .header-9-sub .hero-unit.bordered {
+    padding: 14px 55px 8px;
+  }
+  .header-9-sub .hero-unit.bordered p {
+    font-size: 40px;
+  }
+  .header-9-sub p {
+    font-size: 2.3vw;
+  }
+  .header-9-sub p img {
+    width: 1.8vw;
+    margin-top: -5px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header-9-sub p {
+    font-size: 3vw;
+  }
+  .header-9-sub p img {
+    width: 2.8vw;
+    margin-top: -2px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .header-9-sub p {
+    font-size: 4vw;
+  }
+  .header-9-sub p img {
+    width: 4vw;
+    margin-top: -2px;
+  }
+}
+
+/*------- Place --------*/
+
+.content-32 {
+  padding-bottom: 65px;
+}
+
+.header-18 .background {
+  opacity: 1;
+  background-attachment: fixed;
+}
+
+.header-18 .bg-fv-1 { background-image: url('../images/bg-fv-1.jpg') }
+.header-18 .bg-fv-2 { background-image: url('../images/bg-fv-2.jpg') }
+.header-18 .bg-fv-3 { background-image: url('../images/bg-fv-3.jpg') }
+.header-18 .bg-ba-1 { background-image: url('../images/bg-ba-1.jpg') }
+
+.header-18 .header-18-sub .header-18-section h3,
+.header-18 .header-18-sub .header-18-section p {
+  text-shadow: 1px 1px 1px #000;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.header-18 .header-18-sub .header-18-section p {
+  line-height: 24px;
+}
+
+.header-18 .header-18-sub .pt-page-current,
+.header-18 .header-18-sub .no-js .pt-page {
+  overflow: hidden;
+}
+
+
+/*------- Program --------*/
+
+.content-23.bg-city .hero-unit h1 {
+  font-size: 60px;
+}
+.content-23.bg-city .hero-unit h3 {
+  color: #fff;
+}
+
+.content-23.bg-city .hero-unit h3 i {
+  position: relative;
+  top: -4px;
+  margin-right: 10px;
+}
+
+.program {
+  min-height: 500px;
+}
+
+.program .container {
+  background: url('../images/prog-line.png') repeat-y center;
+  padding-bottom: 50px;
+}
+
+.program-day {
+  margin-top: 40px;
+}
+
+.program-image {
+  color: #fff;
+  width: 106px;
+  height: 106px;
+  text-align: center;
+  float: right;
+  margin-right: -68px;
+}
+
+.col-md-offset-6 .program-image {
+  margin-left: -68px;
+  margin-right: 0;
+  float: left;
+}
+
+.program-image b {
+  padding-top: 35px;
+  display: block;
+  font-size: 18px;
+}
+
+.program-image.day-1 { background: url('../images/prog-1.png') no-repeat; }
+.program-image.day-2 { background: url('../images/prog-2.png') no-repeat; }
+.program-image.day-3 { background: url('../images/prog-3.png') no-repeat; }
+
+.program-description {
+  margin-right: 60px;
+  text-align: right;
+}
+
+.col-md-offset-6 .program-description {
+  margin-left: 60px;
+  margin-right: 0;
+  text-align: left;
+}
+
+.program-description p {
+  font-size: 16px;
+}
+
+.col-md-offset-6 .program-description p {
+}
+
+@media all and (max-width: 991px) {
+  .program .container {
+    background-position: 67px center;
+  }
+  .program-image {
+    float: left;
+    margin-right: 0;
+  }
+  .program-description {
+    margin-right: 0;
+    margin-left: 140px;
+    text-align: left;
+  }
+  .col-md-offset-6 .program-image {
+    margin-left: 0;
+  }
+  .col-md-offset-6 .program-description {
+    margin-left: 140px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .program .container {
+    background: none;
+  }
+  .program-image, .col-md-offset-6 .program-image {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .program-description p {
+    font-size: 14px;
+    line-height: 20px;
+
+  }
+  .program-description, .col-md-offset-6 .program-description {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/*------- Price --------*/
+
+.price-1 {
+  padding-top: 0;
+}
+
+.price-1 .plan .title {
+  color: #999;
+}
+.price-1 .price {
+  font-size: 46px;
+  color: #2c3e50;
+}
+
+.price-1 .btn {
+  font-weight: 600;
+}
+
+
+/*------- crew --------*/
+
+.crew-4 {
+  padding-top: 0;
+}
+
+.crew-4 .members .photo {
+  opacity: 1;
+}
+
+.crew-4 .members .social-btns a {
+  margin-right: 7px;
+}
+
+.crew-4 .members .social-btns a div {
+  width: 20px;
+  font-size: 20px;
+}
+
+
+.crew-4 .members .photo-wrapper {
+  height: 500px;
+}
+
+.crew-4 .members .member,
+.crew-4 .members .photo-wrapper {
+  width: 305px;
+}
+
+.crew-4 .members .member:hover .photo {
+  opacity: 1;
+}
+
+/*------- faq --------*/
+
+.faq h3 {
+  margin-bottom: 30px;
+}
+.faq p {
+}
+
+/*------- bgs --------*/
+
+.content-23 {
+  background-attachment: fixed;
+}
+
+
+
+.content-23 .holder {
+  height: 400px;
+}
+
+.content-23.bg-barcelona { background-image: url('../images/bg-barcelona.jpg') }
+.content-23.bg-fuerteventura { background-image: url('../images/bg-fuerteventura.jpg') }
+.content-23.third { background-image: url('../images/bg5.jpg') }
+.content-23.fourth { background-image: url('../images/bg6.jpg') }
+
+@media all and (max-width: 1024px) {
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+
