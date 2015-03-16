@@ -45,6 +45,13 @@ b {
 
 .fake-header {
   background: #ccc;
+  height: 70px;
+  overflow: hidden;
+  top: -16px;
+}
+
+.header-antiflicker {
+  background: transparent !important;
 }
 
 .header-10 .navbar .nav > li {
