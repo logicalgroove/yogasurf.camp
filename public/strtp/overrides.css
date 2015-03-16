@@ -28,14 +28,27 @@ b {
   opacity: 0.8;
 }
 
+.page-wrapper {
+  margin-top: -80px;
+}
+
 /*------- Header --------*/
 
-.header-10 {
-  position: fixed;
+.header-10 .navbar {
+  top: 80px;
+
+}
+
+.header-10 .navbar-fixed-top {
+  top: 0;
+}
+
+.fake-header {
+  background: #ccc;
 }
 
 .header-10 .navbar .nav > li {
-  margin-left: 38px;
+  margin-left: 30px;
 }
 
 .header-10 .navbar .nav > li a, .navbar .navbar-form .btn.btn-success {
@@ -44,7 +57,9 @@ b {
   letter-spacing: 0;
 }
 
-.header-10 .navbar .nav > li a:hover {
+.header-10 .navbar .nav > li a:hover,
+.header-10 .navbar .nav > li a:active,
+.header-10 .navbar .nav > li a:focus {
   color: #000;
 }
 
@@ -72,13 +87,18 @@ b {
 }
 
 .header-9-sub {
-  padding-bottom: 209px;
+  padding: 0;
 }
 
 .header-9-sub .background {
   background-image: url('../images/bg.jpg');
   background-attachment: fixed;
 }
+
+.header-9-sub > .container {
+  padding-top: 20%;
+}
+
 .header-9-sub .hero-unit.bordered {
   border-width: 3px;
   padding: 26px 65px 18px;
@@ -170,6 +190,13 @@ b {
 .header-18 .header-18-sub .pt-page-current,
 .header-18 .header-18-sub .no-js .pt-page {
   overflow: hidden;
+}
+
+.header-18 .header-18-sub .header-18-section .t-row {
+}
+
+.header-18 .header-18-sub .header-18-section .t-row > div {
+  padding-top: 0;
 }
 
 
@@ -340,9 +367,19 @@ b {
 /*------- faq --------*/
 
 .faq h3 {
+  border-bottom: 1px dashed #ccc;
+  display: inline-block;
   margin-bottom: 30px;
+  cursor: pointer;
 }
+
+.faq .answer {
+  display: none;
+  margin-bottom: 40px;
+}
+
 .faq p {
+
 }
 
 /*------- bgs --------*/
