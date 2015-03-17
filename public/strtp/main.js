@@ -44,4 +44,61 @@ $(function () {
     }
   });
 
+  $('#modal1').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget);
+    var plan = button.data('plan');
+    var modal = $(this);
+    modal.find('#plan').val(plan);
+    console.log(plan);
+  })
+
+  $('.btn-submit').click(function() {
+    $('.btn-submit').addClass('btn-disabled');
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var plan = $('#plan').val();
+    var phone = $('#phone').val();
+    var form_valid = true;
+    var form_error = '';
+    $('.form-group').removeClass('has-error');
+
+    if (name == null || name == '') {
+      form_valid = false;
+      $('#name').parent().addClass('has-error');
+    }
+
+    if (phone == null || phone == '') {
+      form_valid = false;
+      $('#phone').parent().addClass('has-error');
+    }
+
+    if (email == null || email == '' || !validateEmail(email)) {
+      form_valid = false;
+      $('#email').parent().addClass('has-error');
+    }
+
+    if (form_valid) {
+      $('.form-group').removeClass('has-error');
+      $.ajax({
+        type: 'POST',
+        url: "http://readissimo.com/api/v1/submit_surf",
+        //url: "http://showsofa.com:3003/api/v1/submit_surf",
+        crossDomain: true,
+        dataType: 'json',
+        data: { name: name, email: email, plan: plan, phone: phone },
+        success: function( data ) {
+          $('.submit_form').hide();
+          $('.thanks').removeClass('hidden');
+          $('.modal-footer').hide();
+        }
+      });
+    }
+  })
+
+  function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+
 });

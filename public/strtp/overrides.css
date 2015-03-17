@@ -19,6 +19,12 @@ b {
   font-weight: 500;
 }
 
+.modal-header .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 [class*="fui-"] img  {
   width: 100%;
   display: block;

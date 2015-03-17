@@ -506,7 +506,7 @@
                   <div class="text-center">⦁</div>
                   <div class="text-center">⦁</div>
                 </div>
-                <a class="btn btn-primary" href="#">Хочу поехать!</a>
+                <a class="btn btn-primary btn_buy" href="#" data-plan="1" data-toggle="modal" data-target="#modal1">Хочу поехать!</a>
               </div>
             </div>
             <div class="col-sm-4">
@@ -523,7 +523,7 @@
                   <b>1</b> экскурсия в Барселоне<br>
                   <div class="text-center">⦁</div>
                 </div>
-                <a class="btn btn-primary" href="#">Хочу поехать!</a>
+                <a class="btn btn-primary btn_buy" href="#" data-plan="2" data-toggle="modal" data-target="#modal1">Хочу поехать!</a>
                 <div class="ribbon">HOT</div>
               </div>
             </div>
@@ -541,7 +541,7 @@
                   <b>3</b> похода по острову<br>
                   <b>1</b> экскурсия в Барселоне<br>
                 </div>
-                <a class="btn btn-primary" href="#">Хочу поехать!</a>
+                <a class="btn btn-primary btn_buy" href="#" data-plan="3" data-toggle="modal" data-target="#modal1">Хочу поехать!</a>
               </div>
             </div>
           </div>
@@ -569,7 +569,6 @@
           </div>
         </div>
       </section>
-
 
       <section class="partners">
         <div class="container">
@@ -649,7 +648,41 @@
         </div>
       </section>
 
+
     </div>
+
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Завяка на участие</h4>
+          </div>
+          <div class="modal-body">
+            <form class="submit_form">
+              <div class="form-group">
+                <label for="email">Твой email *:</label>
+                <input type="email" class="form-control" id="email" placeholder="Введи свой email">
+              </div>
+              <div class="form-group">
+                <label for="name">Твое имя *:</label>
+                <input type="text" class="form-control" id="name" placeholder="Введи своe имя">
+              </div>
+              <div class="form-group">
+                <label for="phone">Контактный телефон *:</label>
+                <input type="text" class="form-control" id="phone" placeholder="Введи свой номер телефона">
+              </div>
+              <input type="hidden" id="plan" value="" >
+            </form>
+            <p class="hidden thanks text-center">Спасибо за заявку, мы свяжемся с тобой в ближайшее время.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-submit">Поехали!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="strtp/common-files/js/jquery-1.10.2.min.js"></script>
     <script src="strtp/flat-ui/js/bootstrap.min.js"></script>
     <script src="strtp/common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
