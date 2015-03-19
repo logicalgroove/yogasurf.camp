@@ -427,6 +427,16 @@ b {
 .content-23.third { background-image: url('../images/bg5.jpg') }
 .content-23.fourth { background-image: url('../images/bg6.jpg') }
 
+
+/*------- footer --------*/
+
+
+.content-32 {
+  padding-top: 80px;
+  margin-top: 40px;
+}
+
+
 @media all and (max-width: 1024px) {
 }
 
