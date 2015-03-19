@@ -49,14 +49,13 @@ $(function () {
     var plan = button.data('plan');
     var modal = $(this);
     modal.find('#plan').val(plan);
-    console.log(plan);
   })
 
-  $('.btn-submit').click(function() {
-    $('.btn-submit').addClass('btn-disabled');
+  $('.btn-submit:not(.btn-disabled)').click(function() {
     var name = $('#name').val();
     var email = $('#email').val();
     var plan = $('#plan').val();
+    var month = $('#month').val();
     var phone = $('#phone').val();
     var form_valid = true;
     var form_error = '';
@@ -78,6 +77,7 @@ $(function () {
     }
 
     if (form_valid) {
+      $('.btn-submit').addClass('btn-disabled');
       $('.form-group').removeClass('has-error');
       $.ajax({
         type: 'POST',
@@ -85,7 +85,7 @@ $(function () {
         //url: "http://showsofa.com:3003/api/v1/submit_surf",
         crossDomain: true,
         dataType: 'json',
-        data: { name: name, email: email, plan: plan, phone: phone },
+        data: { name: name, email: email, plan: plan, phone: phone, month: month },
         success: function( data ) {
           $('.submit_form').hide();
           $('.thanks').removeClass('hidden');
