@@ -85,7 +85,7 @@ $(function () {
         //url: "http://showsofa.com:3003/api/v1/submit_surf",
         crossDomain: true,
         dataType: 'json',
-        data: { name: name, email: email, plan: plan, phone: phone, month: month },
+        data: { surfer: {name: name, email: email, plan: plan, phone: phone, month: month} },
         success: function( data ) {
           $('.submit_form').hide();
           $('.thanks').removeClass('hidden');
