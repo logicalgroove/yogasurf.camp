@@ -1,10 +1,12 @@
 $(function () {
   $('.header-9-sub').css('min-height', $(window).height());
-  $('.header-9-sub .background').parallax('20%', 0.3, true)
+  $('.header-9-sub .background').parallax('20%', 0.3, true).addClass('zout')
   $('.header-18 .background').parallax('50%', 0.3, true)
   $('.content-23').each(function(){
     $(this).parallax('50%', 0.3, true);
   });
+
+  
 
   $('.faq h3').click(function(){
     $(this).next('.answer').toggle();

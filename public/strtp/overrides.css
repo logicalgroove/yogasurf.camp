@@ -110,7 +110,10 @@ b {
 
 .header-9-sub .background {
   background-image: url('../images/bg.jpg');
-  background-attachment: fixed;
+  transition: all 10s ease-in;
+}
+.header-9-sub .background.zout {
+  transform: scale(0.97);
 }
 
 .header-9-sub > .container {
